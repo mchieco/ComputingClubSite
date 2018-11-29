@@ -1,0 +1,183 @@
+<!--Created by Matt Chieco and Evan Rigsby SER 310-->
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Quinnipiac FIJI - Administrator</title>
+    <link rel="shortcut icon" href="../images/Phi Gamma Delta BCL Logo-03.png" type="image/png">
+    <meta name="description" content="Administrator">
+    <meta name="author" content="Mattc">
+
+    <link rel="stylesheet" href="../css/eboardadmin.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+<header>
+    <div class="header">
+        <a href="https://www.facebook.com/qufiji/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/quinnipiacfiji?lang=en" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/quinnipiacfiji/?hl=en" class="fa fa-instagram"></a>
+        <button onclick="logoutbtn()" class="logbtn" style="width:auto; height: 50px; background-color: #663399; margin-left: 15px;"
+            id="login_btn">Log Out</button>
+    </div>
+</header>
+
+<script>
+    function logoutbtn() {
+        var ask = window.confirm("Are you sure you want to log out, if yes, click \"OK\"");
+        if (ask) {
+            location.href = 'index.html';
+
+        }
+    }
+</script>
+<script>
+    function eventSubmit() {
+        alert("Your event has been successfully been submitted!");
+    }
+</script>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bgnav">
+        <a class="navbar-brand" href="index.html">
+            <img src="../images/Phi-Gamma-Delta-BCL-Logo---WEBSITE.png" width="200" height="50" alt="">
+        </a>
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="philanthropy.html">Philanthropy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="currentbrothers.html">Current Brothers</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="recruitment.html">Recruitment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="upcomingevents.html">Upcoming Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactpage.html">Contact</a>
+                </li>
+        </div>
+    </nav>
+    <h1>Eboard Dashboard</h1>
+    <div class="container">
+        <form onsubmit="eventSubmit()">
+            <h2>Create One Time Upcoming Event</h2>
+            <div class="row backgrey">
+                <div class="col">
+                    <label for="fname"><strong>Event Name</strong></label>
+                    <input type="text" id="name" name="name" placeholder="Enter Event Name" required>
+                </div>
+                <div class="col">
+                    <label for="date"><strong>Date</strong></label>
+                    <input type="date" id="date" name="date" placeholder="Enter Date" required>
+                </div>
+                <div class="col">
+                    <label for="time"><strong>Time of Event</strong></label>
+                    <input type="time" id="time" name="time" placeholder="Enter Time" required>
+                    <button style="margin-bottom: 20px" class="btn btn-primary purple-background"
+                        type="submit" value="submit">Create
+                        Event</button>
+                </div>
+            </div>
+        </form>
+        <form onsubmit="eventSubmit()">
+            <h2 style="padding-top:20px;">Create Long Term Upcoming Event</h2>
+            <div class="row backgrey">
+                <div class="col">
+                    <label for="fname"><strong>Event Name</strong></label>
+                    <input type="text" id="name" name="name" placeholder="Enter Event Name" required>
+                </div>
+                <div class="col">
+                    <label for="date"><strong>Starting Date</strong></label>
+                    <input type="date" id="date1" name="date1" placeholder="Enter Date" required>
+                </div>
+                <div class="col">
+                    <label for="time"><strong>Ending Date</strong></label>
+                    <input type="date" id="date2" name="date2" placeholder="Enter Date" required>
+                    <button style="margin-bottom: 20px" class="btn btn-primary purple-background"
+                        type="submit" value="submit">Create
+                        Event</button>
+                </div>
+            </div>
+        </form>
+        <form>
+            <h2 style="padding-top:20px;">Delete or Edit Event</h2>
+            <div class="row backgrey">
+                <div class="col-3">
+                    <label for="fname"><strong>Event Name</strong></label>
+                    <p>IFC Meeting</p>
+                    <p>Chapter</p>
+                    <p>Chapter</p>
+                    <p>EBoard Elections</p>
+                </div>
+                <div class="col-3">
+                    <label for="date"><strong>Starting Date</strong></label>
+                    <p>November 28, 2018</p>
+                    <p>November 11, 2018</p>
+                    <p>December 2, 2018</p>
+                    <p>November 26, 2018</p>
+                </div>
+                <div class="col-3">
+                    <label for="date"><strong>Ending Date</strong></label>
+                    <p>N/A</p>
+                    <p>N/A</p>
+                    <p>N/A</p>
+                    <p>N/A</p>
+                </div>
+                <div class="col-1">
+                    <label for="time"><strong>Time</strong></label>
+                    <p>21:15</p>
+                    <p>17:30</p>
+                    <p>17:30</p>
+                    <p>21:30</p>
+                </div>
+                <div class="col-2">
+                    <br>
+                    <button style="margin-top: 3px;" class="btn btn-primary purple-background" value="submit">Delete</button>
+                    <button style="margin-top: 3px; margin-right: 5px;" class="btn btn-primary purple-background" value="submit">Edit</button>
+                    <br>
+                    <button style="margin-top: 3px;" class="btn btn-primary purple-background" value="submit">Delete</button>
+                    <button style="margin-top: 3px; margin-right: 5px;" class="btn btn-primary purple-background" value="submit">Edit</button>
+                    <br>
+                    <button style="margin-top: 3px;" class="btn btn-primary purple-background" value="submit">Delete</button>
+                    <button style="margin-top: 3px; margin-right: 5px;" class="btn btn-primary purple-background" value="submit">Edit</button>
+                    <br>
+                    <button style="margin-top: 3px;" class="btn btn-primary purple-background" value="submit">Delete</button>
+                    <button style="margin-top: 3px; margin-right: 5px;" class="btn btn-primary purple-background" value="submit">Edit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="container2">
+            <span class="text-muted">© 2018 Copyright: Quinnipiac FIJI - <a id="footer" href="https://www.phigam.org">Phi
+                    Gamma Delta Headquarters</a> - Created and Maintained by Brothers </span>
+        </div>
+    </footer>
+</body>
+
+</html>
