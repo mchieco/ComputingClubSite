@@ -15,7 +15,7 @@
 
 a.active{
     color: white;
-    background: #663399;
+    background: #2d30b3;
     TEXT-DECORATION: none; 
     font-weight: none 
 }
@@ -31,7 +31,7 @@ a.active{
 }
 A:hover { 
     color: white; 
-    background: #663399;
+    background: #2d30b3;
     TEXT-DECORATION: none; 
     font-weight: none 
 }
@@ -47,7 +47,7 @@ A:hover {
 header {
     background: whitesmoke;
     border-bottom-style: solid;
-    border-bottom-color: #663399;
+    border-bottom-color: #2d30b3;
     border-bottom-width: 1px;
 }
 
@@ -220,7 +220,7 @@ footer {
 }
 
 .bg-cover {
-    background-image: url("../images/group\ photo.jpg");
+    background-image: url("../images/compute.jpg");
     color: white;
 }
 
@@ -253,7 +253,7 @@ h3 {
 }
 
 .purple-background {
-    background-color:#663399;
+    background-color:#2d30b3;
     color:#ffffff;
 }
 
