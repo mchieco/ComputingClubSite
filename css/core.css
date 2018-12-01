@@ -1,3 +1,11 @@
+img{
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
 footer .seperate{
     height: 10px;
     background-color: rgb(129, 204, 227);
@@ -6,3 +14,12 @@ footer .seperate{
 footer img{
     height: 10rem;
 }
+.bg-cover {
+    background-image: url("https://mk0wpbuffsa0vanw2d3s.kinstacdn.com/wp-content/uploads/2017/05/VIDEO-How-to-Find-Source-Code-in-WordPress-1.jpg");
+    background-size: cover;
+    color: white;
+    background-position: center center;
+    text-shadow: 0 0 8px black;
+    position: relative;
+    z-index: -2;
+  }
