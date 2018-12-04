@@ -245,6 +245,8 @@ footer p{
 {
 	margin: 5px 0 10px;
 color: red;
+cursor: pointer;
+text-align: right;
 }
 
  .at-login-form .btn-gst
@@ -274,7 +276,10 @@ background-color: transparent;
  .at-login-form .ta-l
 {
 	text-align:left;
-	margin-top: 5px;
+}
+
+.at-login-form .ta-r {
+    text-align: right;
 }
 
  .at-login-form .modal-dialog {
@@ -294,4 +299,8 @@ background-color: transparent;
 .blue-bg-nav
 {
     background-color:#1DB9EC;
+}
+
+.already-member {
+    margin-right: 1rem;
 }
