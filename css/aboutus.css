@@ -1,0 +1,9 @@
+main img{
+    width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    max-height: 500px;
+}
+hr{
+    max-width: 60%;
+}
