@@ -11,6 +11,9 @@ footer .seperate{
     background-color: rgb(129, 204, 227);
     width: 100%;
 }
+footer{
+    margin-bottom: 30px;
+}
 footer img{
     height: 10rem;
 }
@@ -34,6 +37,39 @@ footer p{
       text-align: center;
   }
   .card img{
-      height: 200px;
+      /* padding: 10px 10px 10px 10px; */
+      height: 150px;
+      width: 150px;
       object-fit: cover;
+  }
+  .featured .card{
+	box-shadow: 0 0px 0px rgba(0,0,0,0.15);
+	transition: box-shadow 0.2s ease-in-out;
+  }
+  .featured .card:hover{
+	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+  }
+  .carousel {
+    /* margin-bottom: 4rem; */
+  }
+  .carousel-caption {
+    /* bottom: 3rem; */
+    z-index: 10;
+  }
+  .carousel-item {
+    height: calc(80vh - 56px);
+    background-color: #777;
+    text-shadow: 0px 0px 8px black;
+  }
+  .carousel-item p {
+      font-size: 20px;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: calc(100vh - 56px);
+    object-fit: cover;
   }
