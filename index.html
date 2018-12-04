@@ -15,7 +15,7 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/core.css" />
-	<link rel="stylesheet" media="screen and (max-width: 645px)" href="/css/mobile.css" />
+	<link rel="stylesheet" media="screen and (max-width: 645px)" href="css/mobile.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
 	 crossorigin="anonymous">
 </head>
@@ -37,11 +37,122 @@
 				<a class="nav-item nav-link" href="aboutus.html">About Us</a>
 			</div>
 			<div class="navbar-nav ml-auto">
-				<a class="nav-item nav-link" href="#">Register</a>
-				<a class="nav-item nav-link" href="#">Login</a>
+				<a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#at-signup-filling">Register</a>
+				<a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#at-login">Login</a>
+			</div>
+	</nav>
+	<section class="at-login-form">
+		<!-- MODAL LOGIN -->
+		<div class="modal fade" id="at-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<input type="email" class="form-control-form " id="exampleInputEmaillog" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control-form " id="exampleInputPasswordpas" placeholder="Password">
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"> Remember me
+										</label>
+									</div>
+								</div>
+								<div class="col-md-4 col-md-offset-2">
+									<p class="frgt-pswd" data-toggle="modal" data-dismiss="modal" data-target="#at-reset-pswd"> Forgot Password ?</p>
+								</div>
+							</div>
+							<button type="submit" class="btn-lgin">Login</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<div class="row">
+							<div class="col-md-6">
+								<p class="ta-l">Don't have an account ? </p>
+							</div>
+							<div class="col-md-4 col-md-offset-2">
+								<button class="btn-gst" data-toggle="modal" data-dismiss="modal" data-target="#at-signup-filling">Sign Up
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</nav>
+		<!-- MODAL SIGNUP FORM FILLING -->
+		<div class="modal fade" id="at-signup-filling" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control-form " id="exampleInputEmaillog" placeholder="Full Name">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control-form " id="exampleInputEmaillog" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control-form " id="exampleInputPasswordpas" placeholder="Password">
+							</div>
+							<button type="submit" class="btn-lgin">Signup</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<div class="row">
+							<div class="col-md-6">
+								<p class="ta-l">Already a Member? </p>
+							</div>
+							<div class="col-md-4 col-md-offset-2">
+								<button class="btn-gst" data-toggle="modal" data-dismiss="modal" data-target="#at-login">Login</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="at-reset-pswd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					</div>
+					<div class="modal-body">
+						<form >
+							<p> Enter the email address associated with your account, and we’ll email you a link to reset your password. </p>
+							<div class="form-group">
+
+								<input type="email" class="form-control-form " id="exampleInputEmaillog" placeholder="Email" required>
+							</div>
+							<button type="submit" class="btn-lgin">Submit</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
 	<!-- Content of Page -->
 	<main>
 		<!-- Our Carousel -->
@@ -109,7 +220,8 @@
 						</div>
 						<div class="card-body">
 							<h5 class="card-title">Upcoming Events</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+								content.
 								This content is a little bit longer.</p>
 							<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
 							<button type="button" class="btn btn-secondary">Read More</button>
@@ -125,7 +237,8 @@
 						</div>
 						<div class="card-body">
 							<h5 class="card-title">Join Now</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+								content.
 								This content is a little bit longer.</p>
 							<button type="button" class="btn btn-secondary">Read More</button>
 						</div>
@@ -140,7 +253,8 @@
 						</div>
 						<div class="card-body">
 							<h5 class="card-title">Our History</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+								content.
 								This content is a little bit longer.</p>
 							<button type="button" class="btn btn-secondary">Read More</button>
 						</div>
