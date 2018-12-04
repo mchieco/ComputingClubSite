@@ -105,8 +105,11 @@ footer p{
       -ms-transition: all 0.15s ease-in-out;
       -o-transition: all 0.15s ease-in-out;
   }
-  .btn:hover {
+  .card-body > .btn:hover {
       background-color: rgb(255, 184, 28) !important;
       box-shadow: 0 0 4px 2px rgba(221, 154, 10, .9) inset;
       border-color: rgba(221, 154, 10, .9);
+  }
+  .card-body > .btn:active {
+    border-color: rgba(211, 154, 10, 1);
   }
