@@ -50,12 +50,12 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
 					</div>
 					<div class="modal-body">
-						<form>
+						<form action="admincontrol.html" method="GET">
 							<div class="form-group">
-								<input type="email" class="form-control-form " id="exampleInputEmaillog" placeholder="Email">
+								<input type="email" class="form-control-form " id="exampleInputEmaillog" placeholder="Email" required>
 							</div>
 							<div class="form-group">
-								<input type="password" class="form-control-form " id="exampleInputPasswordpas" placeholder="Password">
+								<input type="password" class="form-control-form " id="exampleInputPasswordpas" placeholder="Password" required>
 							</div>
 							<div class="row">
 								<div class="col-md-4">
@@ -88,15 +88,15 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
 					</div>
 					<div class="modal-body">
-						<form>
+						<form action="index.html" method="GET">
 							<div class="form-group">
-								<input type="text" class="form-control-form " id="exampleInputEmaillog" placeholder="Full Name">
+								<input type="text" class="form-control-form " id="exampleInputEmaillog" placeholder="Full Name" required>
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control-form " id="exampleInputEmaillog" placeholder="Email">
+								<input type="email" class="form-control-form " id="exampleInputEmaillog" placeholder="Email" required>
 							</div>
 							<div class="form-group">
-								<input type="password" class="form-control-form " id="exampleInputPasswordpas" placeholder="Password">
+								<input type="password" class="form-control-form " id="exampleInputPasswordpas" placeholder="Password" required>
 							</div>
 							<button type="submit" class="btn-lgin">Signup</button>
 						</form>
@@ -116,7 +116,7 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
 					</div>
 					<div class="modal-body">
-						<form >
+						<form action="index.html" method="GET">
 							<p> Enter the email address associated with your account, and we'll email you a link to reset your password. </p>
 							<div class="form-group">
 
@@ -131,17 +131,6 @@
 			</div>
 		</div>
 	</section>
-	<script>
-		// Get the modal
-		var modal = document.getElementById('id01');
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function (event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
-	</script>
 	<!-- Content of Page -->
 	<main>
 		<!-- Our Carousel -->
