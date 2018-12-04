@@ -104,3 +104,16 @@ footer p{
   .card-body > .btn:active {
     border-color: rgba(211, 154, 10, 1);
   }
+  .exec hr{
+      max-width: 60%;
+  }
+  .exec .card{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+
+  }
+  .exec i{
+    font-size: 100px;
+    line-height: 100px;
+    margin-top: 10px;
+    color: rgb(9, 14, 61);
+  }
