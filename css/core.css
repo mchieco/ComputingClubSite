@@ -41,16 +41,7 @@ footer p{
       object-fit: cover;
   }
   .featured .card{
-	box-shadow: 0 0px 0px rgba(0,0,0,0.15);
-    transition: box-shadow 0.2s ease-in-out;
-    -moz-transition: box-shadow 0.2s ease-in-out;
-    -ms-transition: box-shadow 0.2s ease-in-out;
-    -webkit-transition: box-shadow 0.2s ease-in-out;
-    -o-transition: box-shadow 0.2s ease-in-out;
-  }
-  .featured .card:hover{
-	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-
+	box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   }
   .carousel {
     /* margin-bottom: 4rem; */
