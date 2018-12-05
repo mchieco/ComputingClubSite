@@ -198,7 +198,7 @@ footer p{
 	background-image: none;
 	border: 1px solid #eee;
 	border-radius: 0px;
-	background-color: #1DB9EC;
+	background-color: rgb(9, 14, 61);
 	width: 100%;
 	margin-top: 10px;
 	color:#fff;
@@ -309,4 +309,8 @@ background-color: transparent;
 
 .already-member {
     margin-right: 1rem;
+}
+
+.container-fluid {
+    max-width: 1300px;
 }
