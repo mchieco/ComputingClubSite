@@ -300,7 +300,12 @@ background-color: transparent;
     width: 500px;
     margin: 30px auto;
 }
-
+i u{
+    cursor: pointer;
+}
+i u:hover{
+    color: rgba(211, 154, 10, 1);
+}
 .at-login-form .modal-content
 {
 	padding: 0px 10px;

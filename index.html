@@ -103,8 +103,6 @@
 					</div>
 					<div class="modal-footer">
 						<div class="row">
-							<p class="ta-l already-member">An Officer or Administrator?&nbsp;&nbsp;<button class="btn-gst" data-toggle="modal"
-								 data-dismiss="modal" data-target="#at-login">Login</button></p>
 						</div>
 					</div>
 				</div>
@@ -193,29 +191,29 @@
 				<div class="col-12 col-md-6 col-lg-4 center">
 					<div class="card mb-3">
 						<div class="center">
-							<i class="card-image-top far fa-calendar-alt"></i>
+							<i onclick="location.href='events.html'" class="card-image-top far fa-calendar-alt"></i>
 						</div>
 						<div class="card-body">
-							<h5 class="card-title">Events</h5>
+							<h5 onclick="location.href='events.html'" class="card-title">Events</h5>
 							<p class="card-text">The Quinnipiac Computing Club has past and upcoming events to get excited about! If you
 								want to learn more click below.</p>
 							<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-							<button type="button" onclick="location.href='events.html'" class="btn btn-secondary">Learn More</button>
+							<!-- <button type="button" onclick="location.href='events.html'" class="btn btn-secondary">Learn More</button> -->
 						</div>
 					</div>
 				</div>
 				<!-- End card -->
 				<!-- Card -->
 				<div class="col-12 col-md-6 col-lg-4 center">
-					<div class="card mb-3">
+					<div  class="card mb-3">
 						<div class="center">
-							<i class="card-image-top fas fa-user-plus"></i>
+							<i data-toggle="modal" data-target="#at-signup-filling" class="card-image-top fas fa-user-plus"></i>
 						</div>
 						<div class="card-body">
-							<h5 class="card-title">Join Now</h5>
+							<h5 data-toggle="modal" data-target="#at-signup-filling" class="card-title">Join Now</h5>
 							<p class="card-text">If you are interested in joining the Quinnipiac Computing club, click below and fill out
 								the form to show your interest and sign up!</p>
-							<button type="button" data-toggle="modal" data-target="#at-signup-filling" class="btn btn-secondary">Join Here</button>
+							<!-- <button type="button" data-toggle="modal" data-target="#at-signup-filling" class="btn btn-secondary">Join Here</button> -->
 						</div>
 					</div>
 				</div>
@@ -224,13 +222,13 @@
 				<div class="col-12 col-md-6 col-lg-4 center">
 					<div class="card mb-3">
 						<div class="center">
-							<i class="card-image-top fas fa-history"></i>
+							<i onclick="location.href='aboutus.html'" class="card-image-top fas fa-history"></i>
 						</div>
 						<div class="card-body">
-							<h5 class="card-title">Our History</h5>
+							<h5 onclick="location.href='aboutus.html'" class="card-title"><u>Our History</u></h5>
 							<p class="card-text">If you are interested in the history and attributes of the Quinnipiac Computing Club, or
 								want to learn more about the club in general, click below.</p>
-							<button type="button" onclick="location.href='aboutus.html'" class="btn btn-secondary">Read More</button>
+							<!-- <button type="button" onclick="location.href='aboutus.html'" class="btn btn-secondary">Read More</button> -->
 						</div>
 					</div>
 				</div>
