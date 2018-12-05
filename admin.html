@@ -40,9 +40,18 @@
             </div>
             <div class="navbar-nav ml-auto">
                 <!-- <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#at-signup-filling">Register</a> -->
-                <a class="nav-item nav-link" href="index.html">Logout</a>
+                <a class="nav-item nav-link" onclick="logoutbtn()"href="index.html">Logout</a>
             </div>
     </nav>
+    <script>
+        function logoutbtn() {
+            var ask = window.confirm("Are you sure you want to log out, if yes, click \"OK\"");
+            if (ask) {
+                location.href = 'index.html';
+
+            }
+        }
+    </script>
     <!-- Content of Page -->
     <section>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -102,7 +111,7 @@
                     <!-- End Card -->
                     <div class="card mb-3">
                         <div style="display: inline" class="right mt-1 mr-1">
-                                <i class="fas fa-list-ul" onclick="$('#exampleModal').modal('toggle')"></i>
+                            <i class="fas fa-list-ul" onclick="$('#exampleModal').modal('toggle')"></i>
                             <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
                             <i style="display: inline" class="fas fa-eraser remove"></i>
                             <!-- <i style="display: inline" class="fas fa-user-slash remove"  title="Remove user"></i> -->
@@ -116,7 +125,7 @@
                     <!-- End Card -->
                     <div class="card mb-3">
                         <div style="display: inline" class="right mt-1 mr-1">
-                                <i class="fas fa-list-ul" onclick="$('#exampleModal').modal('toggle')"></i>
+                            <i class="fas fa-list-ul" onclick="$('#exampleModal').modal('toggle')"></i>
                             <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
                             <i style="display: inline" class="fas fa-eraser remove"></i>
                             <!-- <i style="display: inline" class="fas fa-user-slash remove"  title="Remove user"></i> -->
@@ -130,7 +139,7 @@
                     <!-- End Card -->
                     <div class="card mb-3">
                         <div style="display: inline" class="right mt-1 mr-1">
-                                <i class="fas fa-list-ul" onclick="$('#exampleModal').modal('toggle')"></i>
+                            <i class="fas fa-list-ul" onclick="$('#exampleModal').modal('toggle')"></i>
                             <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
                             <i style="display: inline" class="fas fa-eraser remove"></i>
                             <!-- <i style="display: inline" class="fas fa-user-slash remove"  title="Remove user"></i> -->
@@ -144,7 +153,7 @@
                     <!-- End Card -->
                     <div class="card mb-3">
                         <div style="display: inline" class="right mt-1 mr-1">
-                                <i class="fas fa-list-ul" onclick="$('#exampleModal').modal('toggle')"></i>
+                            <i class="fas fa-list-ul" onclick="$('#exampleModal').modal('toggle')"></i>
                             <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
                             <i style="display: inline" class="fas fa-eraser remove"></i>
                             <!-- <i style="display: inline" class="fas fa-user-slash remove"  title="Remove user"></i> -->

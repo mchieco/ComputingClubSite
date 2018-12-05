@@ -40,9 +40,17 @@
             </div>
             <div class="navbar-nav ml-auto">
                 <!-- <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#at-signup-filling">Register</a> -->
-                <a class="nav-item nav-link" href="index.html">Logout</a>
+                <a class="nav-item nav-link" onclick="logoutbtn()"href="index.html">Logout</a>
             </div>
     </nav>
+    <script>
+        function logoutbtn() {
+            var ask = window.confirm("Are you sure you want to log out, if yes, click \"OK\"");
+            if (ask) {
+                location.href = 'index.html';
+            }
+        }
+    </script>
     <!-- Content of Page -->
     <main>
         <div class='container-fluid center'>
