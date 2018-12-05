@@ -38,7 +38,7 @@ main i{
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 main i:hover{
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    color: rgba(53, 122, 191, 1);
 
 }
 .remove{
