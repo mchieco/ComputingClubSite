@@ -322,3 +322,7 @@ background-color: transparent;
 .container-fluid {
     max-width: 1300px;
 }
+
+.list {
+    text-align: left;
+}
