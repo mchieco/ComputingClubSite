@@ -46,6 +46,14 @@ footer p{
   .featured .card{
 	box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   }
+  .featured i{
+    /* box-shadow: 0 0px 0px rgba(0,0,0,0.15); */
+    cursor: pointer;
+  }
+  .featured i:hover{
+    /* box-shadow: 0 2px 6px rgba(0,0,0,0.15); */
+    color: rgba(53, 122, 191, 1);
+  }
   .carousel {
     /* margin-bottom: 4rem; */
   }
@@ -122,6 +130,7 @@ footer p{
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 
   }
+
   .left{
       text-align: left;
   }
@@ -300,11 +309,11 @@ background-color: transparent;
     width: 500px;
     margin: 30px auto;
 }
-i u{
+h5 u{
     cursor: pointer;
 }
-i u:hover{
-    color: rgba(211, 154, 10, 1);
+h5 u:hover{
+    color: rgba(53, 122, 191, 1);
 }
 .at-login-form .modal-content
 {
