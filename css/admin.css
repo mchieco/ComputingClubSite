@@ -7,6 +7,18 @@ main img{
 hr{
     max-width: 60%;
 }
+ul {
+    list-style-type: none;
+  }
+  li{
+      font-size: 18px; 
+  }
+  li i{
+    font-size: 25px;
+    line-height: 25px;
+    padding-right: 5px;
+    width: 30px;
+  }
 .card{
     min-height: 100px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
@@ -14,7 +26,7 @@ hr{
 .pending .card{
     /* background-color: rgb(198, 204, 255); */
 }
-i{
+main i{
     cursor: pointer;
     font-size: 30px;
     line-height: 30px;
@@ -25,7 +37,7 @@ i{
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
-i:hover{
+main i:hover{
     box-shadow: 0 3px 8px rgba(0,0,0,0.15);
 
 }
