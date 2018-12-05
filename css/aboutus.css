@@ -7,3 +7,11 @@ main img{
 hr{
     max-width: 60%;
 }
+
+.mission-statement {
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
