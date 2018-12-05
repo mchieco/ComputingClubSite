@@ -84,6 +84,40 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="modal fade" id="editevent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Event</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Start Date:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">End Date:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Description:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
     <main>
         <div class='container-fluid center'>
             <h1>Events</h1>
@@ -91,14 +125,14 @@
             <div class="row">
                 <div class="col-12 col-lg-12">
                     <div class="left mb-3 add">
-                        <button type="button" class="btn btn-primary QUBack">Add Event <i class="fas fa-plus-circle"></i></button>
+                        <button type="button" class="btn btn-primary QUBack"  onclick="$('#editevent').modal('toggle')">Add Event <i class="fas fa-plus-circle"></i></button>
                         <!-- <button type="button" class="btn btn-secondary transparent"  data-toggle="modal" data-target="#exampleModal"><i class="fas fa-clipboard-list"></i></button> -->
                     </div>
                     <!-- Card -->
                     <div class="card mb-3">
                         <div style="display: inline" class="right mt-1 mr-1">
                             <i class="fas fa-list-ul" onclick="$('#exampleModal').modal('toggle')"></i>
-                            <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
+                            <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editevent').modal('toggle')"></i>
                             <i style="display: inline" class="fas fa-eraser remove"></i>
                             <!-- <i style="display: inline" class="fas fa-user-slash remove"  title="Remove user"></i> -->
                         </div>
@@ -112,7 +146,7 @@
                     <div class="card mb-3">
                         <div style="display: inline" class="right mt-1 mr-1">
                             <i class="fas fa-list-ul" onclick="$('#exampleModal').modal('toggle')"></i>
-                            <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
+                            <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editevent').modal('toggle')"></i>
                             <i style="display: inline" class="fas fa-eraser remove"></i>
                             <!-- <i style="display: inline" class="fas fa-user-slash remove"  title="Remove user"></i> -->
                         </div>
@@ -126,7 +160,7 @@
                     <div class="card mb-3">
                         <div style="display: inline" class="right mt-1 mr-1">
                             <i class="fas fa-list-ul" onclick="$('#exampleModal').modal('toggle')"></i>
-                            <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
+                            <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editevent').modal('toggle')"></i>
                             <i style="display: inline" class="fas fa-eraser remove"></i>
                             <!-- <i style="display: inline" class="fas fa-user-slash remove"  title="Remove user"></i> -->
                         </div>
@@ -140,7 +174,7 @@
                     <div class="card mb-3">
                         <div style="display: inline" class="right mt-1 mr-1">
                             <i class="fas fa-list-ul" onclick="$('#exampleModal').modal('toggle')"></i>
-                            <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
+                            <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editevent').modal('toggle')"></i>
                             <i style="display: inline" class="fas fa-eraser remove"></i>
                             <!-- <i style="display: inline" class="fas fa-user-slash remove"  title="Remove user"></i> -->
                         </div>
@@ -154,7 +188,7 @@
                     <div class="card mb-3">
                         <div style="display: inline" class="right mt-1 mr-1">
                             <i class="fas fa-list-ul" onclick="$('#exampleModal').modal('toggle')"></i>
-                            <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
+                            <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editevent').modal('toggle')"></i>
                             <i style="display: inline" class="fas fa-eraser remove"></i>
                             <!-- <i style="display: inline" class="fas fa-user-slash remove"  title="Remove user"></i> -->
                         </div>
@@ -174,10 +208,10 @@
         <div class="center">
             <p>Quinnipiac Computing Club</p>
             <p>Created by Matt Chieco, Joe Passanante, Will Eccles</p>
-            <a href="www.facebook.com"><i class="fab fa-facebook-square"></i></a>
-			<a href="www.github.com"><i class="fab fa-github-square"></i></a>
-			<a href="www.twitter.com"><i class="fab fa-twitter-square"></i></a>
-			<a href="www.reddit.com"><i class="fab fa-reddit-square"></i></a>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+			<a href="https://www.github.com"><i class="fab fa-github-square"></i></a>
+			<a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+			<a href="https://www.reddit.com"><i class="fab fa-reddit-square"></i></a>
         </div>
     </footer>
 

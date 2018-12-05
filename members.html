@@ -52,6 +52,40 @@
         }
     </script>
     <!-- Content of Page -->
+    <section>
+        <div class="modal fade" id="editmember" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Edit Member</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Name:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Date Joined:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Reason for Joining:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
     <main>
         <div class='container-fluid center'>
             <h1>Member Management</h1>
@@ -68,7 +102,7 @@
                         <div class="center" style="display: inline">
                             <h3 style="display: inline">Matt Chieco</h3>
                             <div style="display: inline" class="right">
-                                <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
+                                <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editmember').modal('toggle')"></i>
                                 <i style="display: inline" class="fas fa-user-slash remove" title="Remove user"></i>
                             </div>
                         </div>
@@ -84,7 +118,7 @@
                         <div class="center" style="display: inline">
                             <h3 style="display: inline">Olivia Miller</h3>
                             <div style="display: inline" class="right">
-                                <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
+                                <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editmember').modal('toggle')"></i>
                                 <i style="display: inline" class="fas fa-user-slash remove" title="Remove user"></i>
                             </div>
                         </div>
@@ -100,7 +134,7 @@
                         <div class="center" style="display: inline">
                             <h3 style="display: inline">Olivia Miller</h3>
                             <div style="display: inline" class="right">
-                                <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
+                                <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editmember').modal('toggle')"></i>
                                 <i style="display: inline" class="fas fa-user-slash remove" title="Remove user"></i>
                             </div>
                         </div>
@@ -116,7 +150,7 @@
                         <div class="center" style="display: inline">
                             <h3 style="display: inline">Olivia Miller</h3>
                             <div style="display: inline" class="right">
-                                <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
+                                <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editmember').modal('toggle')"></i>
                                 <i style="display: inline" class="fas fa-user-slash remove" title="Remove user"></i>
                             </div>
                         </div>
@@ -132,7 +166,7 @@
                         <div class="center" style="display: inline">
                             <h3 style="display: inline">Olivia Miller</h3>
                             <div style="display: inline" class="right">
-                                <i style="display: inline" class="far fa-edit right" title="Edit user settings"></i>
+                                <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editmember').modal('toggle')"></i>
                                 <i style="display: inline" class="fas fa-user-slash remove" title="Remove user"></i>
                             </div>
                         </div>
@@ -152,7 +186,7 @@
                         <div class="center" style="display: inline">
                             <h3 style="display: inline">John Smith</h3>
                             <div style="display: inline" class="right">
-                                <i style="display: inline" class="fas fa-check" title="Accept User"></i>
+                                <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editmember').modal('toggle')"></i>
                                 <i style="display: inline" class="fas fa-times-circle remove" title="Decline User"></i>
                             </div>
                         </div>
@@ -168,7 +202,7 @@
                         <div class="center" style="display: inline">
                             <h3 style="display: inline">John Smith</h3>
                             <div style="display: inline" class="right">
-                                <i style="display: inline" class="fas fa-check" title="Accept User"></i>
+                                <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editmember').modal('toggle')"></i>
                                 <i style="display: inline" class="fas fa-times-circle remove" title="Decline User"></i>
                             </div>
                         </div>
@@ -184,7 +218,7 @@
                         <div class="center" style="display: inline">
                             <h3 style="display: inline">John Smith</h3>
                             <div style="display: inline" class="right">
-                                <i style="display: inline" class="fas fa-check" title="Accept User"></i>
+                                <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editmember').modal('toggle')"></i>
                                 <i style="display: inline" class="fas fa-times-circle remove" title="Decline User"></i>
                             </div>
                         </div>
@@ -200,7 +234,7 @@
                         <div class="center" style="display: inline">
                             <h3 style="display: inline">John Smith</h3>
                             <div style="display: inline" class="right">
-                                <i style="display: inline" class="fas fa-check" title="Accept User"></i>
+                                <i style="display: inline" class="far fa-edit right" title="Edit user settings" onclick="$('#editmember').modal('toggle')"></i>
                                 <i style="display: inline" class="fas fa-times-circle remove" title="Decline User"></i>
                             </div>
                         </div>
@@ -220,10 +254,10 @@
         <div class="center">
             <p>Quinnipiac Computing Club</p>
             <p>Created by Matt Chieco, Joe Passanante, Will Eccles</p>
-            <a href="www.facebook.com"><i class="fab fa-facebook-square"></i></a>
-			<a href="www.github.com"><i class="fab fa-github-square"></i></a>
-			<a href="www.twitter.com"><i class="fab fa-twitter-square"></i></a>
-			<a href="www.reddit.com"><i class="fab fa-reddit-square"></i></a>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+			<a href="https://www.github.com"><i class="fab fa-github-square"></i></a>
+			<a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+			<a href="https://www.reddit.com"><i class="fab fa-reddit-square"></i></a>
         </div>
     </footer>
 
