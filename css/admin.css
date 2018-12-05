@@ -1,0 +1,37 @@
+main img{
+    width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    max-height: 500px;
+}
+hr{
+    max-width: 60%;
+}
+.card{
+    min-height: 100px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.pending .card{
+    /* background-color: rgb(198, 204, 255); */
+}
+i{
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    color: rgb(9, 14, 61);
+    box-shadow: 0 0px 0px rgba(0,0,0,0.15);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+i:hover{
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+
+}
+.remove{
+    color: red;
+}
+b{
+    font-size: 18px;
+}

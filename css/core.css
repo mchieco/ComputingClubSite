@@ -30,6 +30,9 @@ footer p{
     position: relative;
     z-index: -2;
   }
+  .right{
+      text-align: right;
+  }
   .center{
       align-content: center;
       text-align: center;
@@ -110,6 +113,9 @@ footer p{
   .exec .card{
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 
+  }
+  .left{
+      text-align: left;
   }
   .exec i{
     font-size: 90px;
