@@ -326,3 +326,11 @@ background-color: transparent;
 .list {
     text-align: left;
 }
+footer a i{
+    font-size: 35px;
+    line-height: 35px;
+    padding-right: 5px;
+}
+footer a i:hover{
+    color: white;
+}
